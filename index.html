@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reza Moosavi | AI-Driven Drug Discovery</title>
-<meta name="description" content="Reza Moosavi, PharmD, PhD candidate in Molecular Pharmaceutics. AI-driven peptide discovery and protein design with experimental validation.">
+<title>Reza Moosavi, PharmD, PhD | AI-Driven Drug Discovery</title>
+<meta name="description" content="Reza Moosavi, PharmD, PhD. AI-driven peptide discovery and protein design with experimental validation: insulin evolution, venom insulins, and peptide-receptor deep learning.">
 <style>
   :root {
     --bg: #fafaf8;
@@ -39,7 +39,8 @@
 
   header { padding: 64px 0 32px; }
   h1 { font-size: 2.4rem; margin: 0 0 4px; letter-spacing: -0.02em; }
-  .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 18px; }
+  .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 6px; }
+  .affil { font-size: 0.95rem; color: var(--muted); margin: 0 0 18px; }
   .links { display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: 0.95rem; }
   .links a { font-weight: 600; }
 
@@ -52,20 +53,28 @@
   h2 { font-size: 1.4rem; margin: 0 0 16px; letter-spacing: -0.01em; }
   p { margin: 0 0 14px; }
 
-  .grid { display: grid; gap: 16px; }
+  .grid { display: grid; gap: 20px; }
   .card {
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 12px;
-    padding: 20px 22px;
+    padding: 22px 24px;
   }
-  .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
-  .card p { margin: 0 0 10px; color: var(--text); }
-  .meta { color: var(--muted); font-size: 0.88rem; margin-bottom: 8px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.15rem; line-height: 1.35; }
+  .card h4 { margin: 18px 0 6px; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  .card p { margin: 0 0 10px; }
+  .meta { color: var(--muted); font-size: 0.88rem; margin-bottom: 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
   .chip { background: var(--chip); color: var(--accent); font-size: 0.78rem; padding: 2px 10px; border-radius: 999px; font-weight: 600; }
   ul { margin: 0; padding-left: 20px; }
   li { margin-bottom: 6px; }
+  .card ul { margin: 0 0 10px; font-size: 0.95rem; }
+  .card li { margin-bottom: 5px; }
+
+  details { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
+  summary { cursor: pointer; font-weight: 600; font-size: 0.92rem; color: var(--accent); }
+  details[open] summary { margin-bottom: 4px; }
+
   .two { display: grid; gap: 16px; grid-template-columns: 1fr; }
   @media (min-width: 700px) { .two { grid-template-columns: 1fr 1fr; } }
   .skill-row { margin-bottom: 12px; }
@@ -79,8 +88,9 @@
 
 <header>
   <div class="wrap">
-    <h1>Reza Moosavi, PharmD</h1>
-    <p class="tagline">PhD candidate, Molecular Pharmaceutics, University of Utah. AI-driven peptide discovery and protein design.</p>
+    <h1>Reza Moosavi, PharmD, PhD</h1>
+    <p class="tagline">AI-driven peptide discovery and protein design, from sequence mining to experimental validation.</p>
+    <p class="affil">PhD in Molecular Pharmaceutics, University of Utah (expected 2026)</p>
     <div class="links">
       <a href="https://www.linkedin.com/in/reza-moosavi-1933a518a">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=WJsn2kQAAAAJ&hl=en&oi=ao">Google Scholar</a>
@@ -105,47 +115,192 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>I work at the intersection of machine learning, structural bioinformatics and experimental validation. My research focuses on designing insulin therapeutics, combining large-scale sequence mining of animal and venom transcriptomes with generative protein design and wet-lab testing.</p>
-    <p>I build end-to-end computational pipelines, from sequence curation and language-model embeddings to structure prediction, docking and automated high-throughput screening, and I take the best designs into yeast display and in vivo studies.</p>
+    <p>I work at the intersection of machine learning, structural bioinformatics and experimental validation. My research focuses on insulin therapeutics: mining the natural diversity of insulin-like peptides across the animal kingdom, understanding how that diversity evolved, and using it to design better insulin analogs that are then tested in the lab.</p>
+    <p>I build end-to-end computational pipelines, from sequence curation and language-model embeddings to structure prediction, docking and automated high-throughput screening, and the best designs go on to yeast display, receptor assays and animal studies. I also develop deep learning models that predict which receptors uncharacterized peptides bind.</p>
+    <p>The projects below describe the work in more detail than a CV allows. Each one has a short summary, the key results, and a collapsible section with the technical details.</p>
   </section>
 
   <section id="projects">
     <h2>Research Projects</h2>
     <div class="grid">
 
+      <!-- 1. MBE -->
       <div class="card">
-        <h3>Evolution of the Insulin Family Across the Animal Kingdom</h3>
-        <div class="meta">First author</div>
-        <p>Curated more than 13,000 insulin-family sequences across animal species and identified over 5,000 previously uncharacterized variants. Discovered 8 alternative insulin scaffolds with enhanced stability and solubility, informing the design of high-potency analogs.</p>
-        <div class="chips"><span class="chip">Sequence bioinformatics</span><span class="chip">Phylogenetics</span><span class="chip">Data curation</span></div>
+        <h3>The Origin and Diversity of Insulin Sequences and Structures in Nature</h3>
+        <div class="meta">First author &middot; Under review, <em>Molecular Biology and Evolution</em></div>
+
+        <h4>Background</h4>
+        <p>Insulin belongs to an ancient superfamily of peptide hormones that includes insulin-like peptides (ILPs), insulin-like growth factors (IGFs) and relaxins. They regulate growth, metabolism, development and reproduction across animals. Where the insulin signaling system first arose, and how far its structural diversity extends, were still open questions, especially in invertebrates. That diversity also matters for medicine, because natural variants such as guinea pig, chicken, cone snail and viral insulins have already inspired therapeutic analogs.</p>
+
+        <h4>What I did</h4>
+        <p>I built the most comprehensive survey of the insulin superfamily to date. Starting from 243 validated seed sequences, I mined public databases and curated a final dataset of 7,020 insulin-family sequences. I then used it to trace the evolutionary history of insulin signaling, classify the structural diversity of the family, and map the residue-level constraints that hold the insulin fold together.</p>
+
+        <h4>Key results</h4>
+        <ul>
+          <li><strong>Where insulin exists.</strong> Insulin-like peptides occur in every animal lineage except sponges (Porifera) and comb jellies (Ctenophora). The dataset includes 3,969 chordate sequences from 831 species, 2,087 arthropod sequences from 499 species, and 320 nematode sequences from 56 species.</li>
+          <li><strong>A receptor without a ligand in sponges.</strong> Sponges carry genuine insulin receptor homologs. Insulin receptors from <em>Oscarella lobularis</em>, <em>Corticium candelabrum</em> and <em>Sycon ciliatum</em> cluster with the human receptor family, and the first two sit on the same chromosome. Yet a search of 220 sponge species and 1,945 transcriptomes found no real endogenous ligand. The few hits were scattered across samples and mapped to no genome, which points to contamination.</li>
+          <li><strong>A classic claim overturned.</strong> The one previously reported sponge insulin-like peptide is a rodent contaminant. It shares over 80% identity with rodent insulins and has since been re-annotated as rodent.</li>
+          <li><strong>Twelve structural classes.</strong> Classifying peptides by cysteine pattern, which reflects their possible disulfide bonding, gave 12 classes. The canonical Class I and the extra-bond Class II make up 85% of signal-peptide-containing sequences, and 10 of the 12 classes occur only in invertebrates. They include a nematode scaffold, a five-disulfide prawn peptide, a placozoan class with a new cross-link, cnidarian and rotifer classes, and a class with disulfides inside the C-peptide.</li>
+          <li><strong>Independent confirmation.</strong> Maximum-likelihood phylogenetics, CLANS sequence clustering and ESM-2 language-model embeddings each separated protostome from deuterostome sequences and resolved insulin, IGF and relaxin families on their own.</li>
+          <li><strong>Coevolution matches structure.</strong> Direct coupling analysis recovered three coevolving segments (the A-chain helices, the central B-chain helix and the B-chain C-terminus), plus four long-range couplings that line up with the contacts in the human insulin structure.</li>
+          <li><strong>A resource for design.</strong> Classes with extra disulfide bonds are candidate templates for more stable insulin analogs, and the dataset gives later projects a starting point for homology searches.</li>
+        </ul>
+
+        <details>
+          <summary>Technical details</summary>
+          <h4>Sequence mining and curation</h4>
+          <ul>
+            <li>Iterative PSI-BLAST (3 to 5 rounds, E-value 0.005) against NCBI NR for each seed, collecting about 0.5 million hits, which reduced to 18,019 unique sequences.</li>
+            <li>Length filter of 50 to 500 residues, CD-HIT clustering at 95% identity, and an iterative keyword filter on sequence headers with manual review of ambiguous entries.</li>
+            <li>All remaining sequences folded with ESMFold on a single GPU. Structures at both extremes of the file-size distribution were inspected and aligned to the human insulin scaffold, giving 6,969 high-confidence sequences.</li>
+            <li>Phyla missing from the first pass (Placozoa, Phoronida, Xenacoelomorpha, Platyhelminthes, Nemertea) were added by targeted BLASTp and tBLASTn searches of transcriptome assemblies and from the literature, reaching 7,020 sequences.</li>
+          </ul>
+          <h4>Sponge analysis</h4>
+          <ul>
+            <li>Public sponge RNA-seq data from the NCBI SRA (more than 200 species, 1,945 samples) was trimmed with Trimmomatic and translated with Prodigal, giving about 160 million predicted proteins of 50 to 500 residues.</li>
+            <li>Searches combined BLAST, iterative hidden Markov model searches (four rounds) and Foldseek structure-based search. Insulin-like hits appeared in only 64 of 1,945 samples (37 of 220 species) and none mapped to 56 sponge genome assemblies, checked by BLASTp and tBLASTn.</li>
+            <li>For the receptor, 187 candidate sponge insulin receptors with confirmed genomic locations were placed on a phylogeny with all human receptor tyrosine kinases and on a second tree of insulin receptors from every major animal phylum.</li>
+          </ul>
+          <h4>Evolutionary, structural and coevolution analysis</h4>
+          <ul>
+            <li>Phylogeny: MAFFT alignment, IQ-TREE2 with ModelFinder, 1,000 ultrafast bootstrap replicates and SH-aLRT support, visualized in iTOL.</li>
+            <li>CLANS all-against-all BLASTp clustering, and ESM-2 mean-pooled embeddings with UMAP and DBSCAN.</li>
+            <li>Structural classes: signal peptides predicted with SignalP 6.0 (including a rescue step for truncated N-termini), each cysteine mapped to its alignment column, identical patterns collapsed, and representatives predicted with AlphaFold3 and checked by pLDDT.</li>
+            <li>Coevolution: EVcouplings direct coupling analysis on the 7,020-sequence alignment (effective sequence number about 2,350), compared with a C-alpha contact map of human insulin (PDB 1AI0) and mapped onto the structure in PyMOL.</li>
+          </ul>
+          <h4>Limits I note in the paper</h4>
+          <p>Structural classes come from sequence cysteine patterns and AlphaFold3 predictions, not experimental disulfide mapping, and the dataset inherits the taxonomic biases of public databases.</p>
+        </details>
+
+        <div class="chips"><span class="chip">Sequence mining</span><span class="chip">Phylogenetics</span><span class="chip">ESM-2 / UMAP</span><span class="chip">AlphaFold3</span><span class="chip">Coevolution (DCA)</span><span class="chip">HPC</span></div>
       </div>
 
+      <!-- 2. Four-disulfide venom insulins -->
+      <div class="card">
+        <h3>A New Class of Four-Disulfide Venom Insulins</h3>
+        <div class="meta">Companion to the insulin evolution study &middot; Manuscript in preparation</div>
+
+        <h4>Background</h4>
+        <p>Human insulin has three disulfide bonds. Insulins with a fourth bond are attractive because the extra bond could make a more stable molecule, and they exist both in nature and as synthetic constructs. But every four-disulfide insulin reported so far, natural or engineered, has failed to activate the human insulin receptor in a meaningful way.</p>
+
+        <h4>What I did</h4>
+        <p>I mined venom-gland transcriptomes, identified 270+ distinct venom insulins, and clustered them by predicted disulfide connectivity using the cysteine-pattern approach from the evolution study. This singled out a rare class of four-disulfide insulins found in only three related cone snail species, including <em>Conus rolani</em>. That computational result is why <em>C. rolani</em> was chosen for full experimental follow-up.</p>
+
+        <h4>Key results</h4>
+        <ul>
+          <li><strong>Real and expressed.</strong> Mass spectrometry of the venom itself showed these insulins are produced as mature secreted peptides, and confirmed the predicted post-translational modifications.</li>
+          <li><strong>Why so many insulins.</strong> A whole-genome sequence of <em>C. rolani</em> and comparative genomics point to exon shuffling between insulin gene copies as the likely source of the unusually large repertoire.</li>
+          <li><strong>It works on the human receptor.</strong> The more potent of the two natural variants, chemically synthesized, activates the human insulin receptor at about 15-fold lower potency than human insulin. This is the first four-disulfide insulin to show meaningful activity.</li>
+          <li><strong>Structure.</strong> A cryo-EM structure confirmed the predicted four-disulfide fold and showed the peptide engaging the insulin receptor productively.</li>
+          <li><strong>Biophysics.</strong> The four-disulfide insulins are highly soluble, monomeric and very stable, which points toward stable insulin designs.</li>
+        </ul>
+
+        <details>
+          <summary>Technical details</summary>
+          <ul>
+            <li>Classification: signal peptides trimmed, cysteines mapped to multiple-alignment columns and grouped by identical connectivity, then representatives inspected manually.</li>
+            <li>Validation across levels: mass spectrometry of native venom, genome assembly and comparative genomics, solid-phase synthesis of both natural variants, receptor activation assays, and cryo-EM.</li>
+            <li>The work extends the 12-class framework in the evolution study to a venomous lineage.</li>
+          </ul>
+        </details>
+
+        <div class="chips"><span class="chip">Transcriptome mining</span><span class="chip">Disulfide-pattern classification</span><span class="chip">Comparative genomics</span><span class="chip">Mass spectrometry</span><span class="chip">Cryo-EM</span></div>
+      </div>
+
+      <!-- 3. Fast-acting analogs -->
       <div class="card">
         <h3>Computational Design of Fast-Acting Human Insulin Analogs</h3>
-        <div class="meta">First author</div>
-        <p>Mined venom transcriptomes across 300+ species to find insulin-like sequences and used them to design 4 human insulin analogs aimed at faster receptor dissociation. Funded through an NIH T32 training grant in computational approaches to diabetes research.</p>
-        <div class="chips"><span class="chip">Transcriptomics</span><span class="chip">Protein design</span><span class="chip">Molecular modeling</span></div>
+        <div class="meta">First author &middot; Characterization in progress &middot; Supported by an NIH T32 training grant in computational approaches to diabetes research</div>
+
+        <h4>Background</h4>
+        <p>Natural insulins differ in how they oligomerize, bind and release the receptor. Porcine insulin differs from human by one residue yet oligomerizes less. Chicken insulin binds the human receptor with about twofold higher affinity, mainly through slower dissociation. Cone snail insulins are intrinsically monomeric and act within seconds as predatory toxins. Nature has repeatedly found different ways to tune insulin, which makes that diversity a library of design templates.</p>
+
+        <h4>What I did</h4>
+        <p>I mined venom transcriptomes from more than 300 species for fast-acting insulin architectures and combined them with the evolutionary dataset from the MBE study. That analysis pointed to a unifying principle behind rapid receptor engagement in nature. I then used the principle to design 4 human insulin analogs engineered for accelerated receptor dissociation.</p>
+
+        <h4>Key results</h4>
+        <ul>
+          <li>Two of the four designed analogs matched native human insulin in potency, the rest stayed close, so speed was gained without giving up activity.</li>
+          <li>The analogs are now going through biochemical and biophysical characterization ahead of preclinical testing.</li>
+        </ul>
+
+        <div class="chips"><span class="chip">Venom transcriptomics</span><span class="chip">Evolution-guided design</span><span class="chip">Receptor kinetics</span></div>
       </div>
 
+      <!-- 4. Schumann -->
       <div class="card">
         <h3>Engineering Enhanced-Potency Venom-Derived Insulin</h3>
-        <div class="meta">Co-author</div>
-        <p>Designed 15 mutants of a venom-derived insulin. Ten showed improved receptor binding, five came close to human potency, and two reached the human range and advanced to preclinical pig trials.</p>
-        <div class="chips"><span class="chip">Structure-guided design</span><span class="chip">Receptor binding</span><span class="chip">Preclinical translation</span></div>
+        <div class="meta">Co-author &middot; Computational design &middot; Designs advanced to preclinical animal trials</div>
+
+        <h4>Background</h4>
+        <p>Venom insulins such as Con-Ins G1 from cone snails are monomeric and fast, which is valuable for a mealtime insulin, but their activity on the human insulin receptor is lower than human insulin's, about 10-fold weaker for this one.</p>
+
+        <h4>What I did</h4>
+        <p>I contributed computational, structure-guided design of mutations to raise the potency of the venom insulin on the human receptor without losing its monomeric character.</p>
+
+        <h4>Key results</h4>
+        <ul>
+          <li>15 structure-guided mutants were designed. Ten improved receptor binding, and five came close to human insulin potency, with more than a 5-fold improvement over the starting peptide.</li>
+          <li>Further optimization of the top candidates produced two variants in the human-insulin potency range. They were produced at scale and advanced to preclinical trials in pigs.</li>
+        </ul>
+
+        <div class="chips"><span class="chip">Structure-guided design</span><span class="chip">AlphaFold</span><span class="chip">Receptor binding</span><span class="chip">Preclinical translation</span></div>
       </div>
 
+      <!-- 5. Single chain -->
       <div class="card">
         <h3>AI-Guided Design of Single-Chain Insulin Variants</h3>
-        <div class="meta">Co-author</div>
-        <p>Built an automated pipeline that generates and screens more than 10,000 single-chain insulin variants using ProteinMPNN, AlphaFold, ESM-2 and ZDOCK. The top 500 candidates go on to yeast display validation.</p>
-        <div class="chips"><span class="chip">ProteinMPNN</span><span class="chip">AlphaFold</span><span class="chip">ESM-2</span><span class="chip">High-throughput screening</span></div>
+        <div class="meta">Co-author &middot; Computational pipeline lead &middot; Experimental validation ongoing</div>
+
+        <h4>Background</h4>
+        <p>Conventional insulin has two chains and has to be kept cold. A stable single-chain insulin would be cheaper to produce and could remove the need for cold-chain storage, which matters most in low-resource settings. Designing one that still activates the receptor is hard.</p>
+
+        <h4>What I did</h4>
+        <p>I designed and built a fully automated computational pipeline that generates, folds, docks and scores single-chain insulin variants at scale, so the best candidates can be picked without manual intervention.</p>
+
+        <details>
+          <summary>Technical details</summary>
+          <ul>
+            <li>Generative design with RFdiffusion, EvoPro and ProteinMPNN, structure prediction with AlphaFold and ESM-2, docking with ZDOCK, and neural network scoring of binding.</li>
+            <li>More than 10,000 variants generated and screened. The top 500 predicted high-affinity candidates went to yeast display validation, using FACS and flow cytometry.</li>
+            <li>Runs on HPC GPU nodes with SLURM workflows.</li>
+            <li>Validation results are still coming in, so I am not reporting outcomes here yet.</li>
+          </ul>
+        </details>
+
+        <div class="chips"><span class="chip">RFdiffusion</span><span class="chip">ProteinMPNN</span><span class="chip">EvoPro</span><span class="chip">AlphaFold</span><span class="chip">ZDOCK</span><span class="chip">Yeast display</span></div>
       </div>
 
+      <!-- 6. GPCR AI -->
       <div class="card">
-        <h3>Functional Annotation of the Dark Venom Peptidome</h3>
-        <div class="meta">First author</div>
-        <p>Developing a multimodal deep learning framework, combining protein language model and graph neural network embeddings, trained on a dataset of 1.5 million peptide-receptor entries to annotate venom peptides of unknown function.</p>
-        <div class="chips"><span class="chip">PyTorch</span><span class="chip">Protein language models</span><span class="chip">Graph neural networks</span></div>
+        <h3>Multimodal Deep Learning for Peptide-Receptor Interaction Prediction</h3>
+        <div class="meta">First author &middot; In progress</div>
+
+        <h4>Background</h4>
+        <p>Many peptides, especially from animal venoms, have no known target. This "dark" peptidome holds thousands of potential ligands for GPCRs, ion channels and other receptors, but experimental screening cannot keep up. A model that predicts which receptor a peptide binds could prioritize what to synthesize and test.</p>
+
+        <h4>What I did</h4>
+        <p>I developed a general-purpose deep learning model that predicts receptor binding for uncharacterized peptides, with GPCRs as the main target class. It is trained on about 131,000 known peptide-receptor pairs plus up to 1.5 million negatives, covering GPCRs, ion channels and insulin receptors across many species. Venom peptides serve as the hard benchmark, not the only use.</p>
+
+        <h4>Key results</h4>
+        <ul>
+          <li>The model reaches above 95% AUROC in benchmarking.</li>
+          <li>The data are split by peptide homology, so the score reflects generalization to peptides unlike anything seen in training.</li>
+          <li>The model is applied to the unannotated venom peptidome across hundreds of species, and top-ranked predictions are prioritized for synthesis and experimental validation.</li>
+        </ul>
+
+        <details>
+          <summary>Technical details</summary>
+          <ul>
+            <li>Peptide and receptor towers use embeddings from pretrained protein language models (ESM-2, ESM-C, ESM3) as frozen feature extractors, combined with structural information and graph neural network features.</li>
+            <li>I compared several fusion designs, including early fusion and multi-tower models with cross-attention, with token embeddings pooled to fixed-length vectors.</li>
+            <li>Because the data pair peptides with receptors, I partitioned on the peptide side (CD-HIT, GraphPart), since novel peptides are the real goal and the receptor set is small and closed.</li>
+            <li>Structure-prediction workflows (AlphaFold-Multimer, ESMFold) run on multi-GPU HPC nodes to model peptide-receptor complexes, scaling toward 130,000 pairs.</li>
+            <li>Implemented in PyTorch on the University of Utah's CHPC cluster.</li>
+          </ul>
+        </details>
+
+        <div class="chips"><span class="chip">PyTorch</span><span class="chip">Protein language models</span><span class="chip">Graph neural networks</span><span class="chip">GPCRs</span><span class="chip">HPC</span></div>
       </div>
 
     </div>
@@ -179,19 +334,23 @@
     <div class="card">
       <div class="skill-row">
         <strong>Machine learning and AI for protein design</strong>
-        <span>PyTorch, multimodal classifiers (PLM + GNN), RFdiffusion, ProteinMPNN, AlphaFold, ESMFold, ESM-2</span>
+        <span>PyTorch, multimodal classifiers (PLM + GNN), RFdiffusion, ProteinMPNN, EvoPro, BindCraft, AlphaFold, ESMFold, ESM-2, ESM-C, ESM3</span>
       </div>
       <div class="skill-row">
         <strong>Bioinformatics and omics</strong>
-        <span>Large-scale sequence mining, transcriptome analysis, single-cell RNA-seq (Seurat), differential expression (DESeq2), R and Python</span>
+        <span>Large-scale sequence mining, transcriptome analysis, phylogenetics (MAFFT, IQ-TREE), CLANS, coevolution analysis, single-cell RNA-seq (Seurat), differential expression (DESeq2), R and Python</span>
       </div>
       <div class="skill-row">
         <strong>Structural modeling</strong>
-        <span>Molecular docking (ZDOCK), structure prediction, structural bioinformatics</span>
+        <span>Structure prediction, molecular docking (ZDOCK), Rosetta, molecular dynamics (GROMACS), PyMOL</span>
       </div>
       <div class="skill-row">
-        <strong>Experimental</strong>
-        <span>Yeast display, in vivo pharmacology and histology, fluorescence microscopy, ImageJ image analysis</span>
+        <strong>High-performance computing</strong>
+        <span>SLURM, Linux, multi-GPU workflows on the University of Utah CHPC cluster</span>
+      </div>
+      <div class="skill-row">
+        <strong>Wet lab</strong>
+        <span>Yeast display screening (FACS, flow cytometry, FlowJo), receptor activation assays, ELISA, protein expression and purification, in vivo pharmacology and histology, fluorescence microscopy and ImageJ analysis</span>
       </div>
     </div>
   </section>
