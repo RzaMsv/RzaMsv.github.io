@@ -1,1 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reza Moosavi | AI-Driven Drug Discovery</title>
+<meta name="description" content="Reza Moosavi, PharmD, PhD candidate in Molecular Pharmaceutics. AI-driven peptide discovery and protein design with experimental validation.">
+<style>
+  :root {
+    --bg: #fafaf8;
+    --card: #ffffff;
+    --text: #1d2327;
+    --muted: #5b6770;
+    --accent: #1f5fae;
+    --line: #e3e6e8;
+    --chip: #eaf1fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14181b;
+      --card: #1c2125;
+      --text: #e8ecef;
+      --muted: #9aa6af;
+      --accent: #6aa5ee;
+      --line: #2c3338;
+      --chip: #233447;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
+  header { padding: 64px 0 32px; }
+  h1 { font-size: 2.4rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 18px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: 0.95rem; }
+  .links a { font-weight: 600; }
+
+  nav { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--bg); position: sticky; top: 0; z-index: 5; }
+  nav .wrap { display: flex; gap: 20px; overflow-x: auto; padding-top: 10px; padding-bottom: 10px; }
+  nav a { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+  nav a:hover { color: var(--accent); text-decoration: none; }
+
+  section { padding: 40px 0 8px; }
+  h2 { font-size: 1.4rem; margin: 0 0 16px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+
+  .grid { display: grid; gap: 16px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px 22px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .card p { margin: 0 0 10px; color: var(--text); }
+  .meta { color: var(--muted); font-size: 0.88rem; margin-bottom: 8px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .chip { background: var(--chip); color: var(--accent); font-size: 0.78rem; padding: 2px 10px; border-radius: 999px; font-weight: 600; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .two { display: grid; gap: 16px; grid-template-columns: 1fr; }
+  @media (min-width: 700px) { .two { grid-template-columns: 1fr 1fr; } }
+  .skill-row { margin-bottom: 12px; }
+  .skill-row strong { display: block; font-size: 0.95rem; margin-bottom: 2px; }
+  .skill-row span { color: var(--muted); font-size: 0.93rem; }
+
+  footer { margin-top: 56px; padding: 24px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Reza Moosavi, PharmD</h1>
+    <p class="tagline">PhD candidate, Molecular Pharmaceutics, University of Utah. AI-driven peptide discovery and protein design.</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/reza-moosavi-1933a518a">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=WJsn2kQAAAAJ&hl=en&oi=ao">Google Scholar</a>
+      <a href="https://github.com/RzaMsv">GitHub</a>
+      <a href="mailto:Reza.Moosavi@utah.edu">Email</a>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#code">Code</a>
+    <a href="#skills">Skills</a>
+    <a href="#honors">Honors</a>
+    <a href="#education">Education</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I work at the intersection of machine learning, structural bioinformatics and experimental validation. My research focuses on designing insulin therapeutics, combining large-scale sequence mining of animal and venom transcriptomes with generative protein design and wet-lab testing.</p>
+    <p>I build end-to-end computational pipelines, from sequence curation and language-model embeddings to structure prediction, docking and automated high-throughput screening, and I take the best designs into yeast display and in vivo studies.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Research Projects</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Evolution of the Insulin Family Across the Animal Kingdom</h3>
+        <div class="meta">First author</div>
+        <p>Curated more than 13,000 insulin-family sequences across animal species and identified over 5,000 previously uncharacterized variants. Discovered 8 alternative insulin scaffolds with enhanced stability and solubility, informing the design of high-potency analogs.</p>
+        <div class="chips"><span class="chip">Sequence bioinformatics</span><span class="chip">Phylogenetics</span><span class="chip">Data curation</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Computational Design of Fast-Acting Human Insulin Analogs</h3>
+        <div class="meta">First author</div>
+        <p>Mined venom transcriptomes across 300+ species to find insulin-like sequences and used them to design 4 human insulin analogs aimed at faster receptor dissociation. Funded through an NIH T32 training grant in computational approaches to diabetes research.</p>
+        <div class="chips"><span class="chip">Transcriptomics</span><span class="chip">Protein design</span><span class="chip">Molecular modeling</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Engineering Enhanced-Potency Venom-Derived Insulin</h3>
+        <div class="meta">Co-author</div>
+        <p>Designed 15 mutants of a venom-derived insulin. Ten showed improved receptor binding, five came close to human potency, and two reached the human range and advanced to preclinical pig trials.</p>
+        <div class="chips"><span class="chip">Structure-guided design</span><span class="chip">Receptor binding</span><span class="chip">Preclinical translation</span></div>
+      </div>
+
+      <div class="card">
+        <h3>AI-Guided Design of Single-Chain Insulin Variants</h3>
+        <div class="meta">Co-author</div>
+        <p>Built an automated pipeline that generates and screens more than 10,000 single-chain insulin variants using ProteinMPNN, AlphaFold, ESM-2 and ZDOCK. The top 500 candidates go on to yeast display validation.</p>
+        <div class="chips"><span class="chip">ProteinMPNN</span><span class="chip">AlphaFold</span><span class="chip">ESM-2</span><span class="chip">High-throughput screening</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Functional Annotation of the Dark Venom Peptidome</h3>
+        <div class="meta">First author</div>
+        <p>Developing a multimodal deep learning framework, combining protein language model and graph neural network embeddings, trained on a dataset of 1.5 million peptide-receptor entries to annotate venom peptides of unknown function.</p>
+        <div class="chips"><span class="chip">PyTorch</span><span class="chip">Protein language models</span><span class="chip">Graph neural networks</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="code">
+    <h2>Code and Data Analysis</h2>
+    <p>Smaller analysis projects on public datasets, available on <a href="https://github.com/RzaMsv">GitHub</a>:</p>
+    <div class="two">
+      <div class="card">
+        <h3><a href="https://github.com/RzaMsv/scRNAseq-coexpression">scRNAseq-coexpression</a></h3>
+        <p>Seurat in R, then Python, to find genes co-expressed with PD-1 in CD4 T cells (GSE212009).</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/RzaMsv/Autofluorescence-clustering">Autofluorescence-clustering</a></h3>
+        <p>Characterizing immune cells by their autofluorescence activity.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/RzaMsv/DESeq2">DESeq2</a></h3>
+        <p>Differential expression and MA plot from GSE52778 RNA-seq data.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/RzaMsv/RNAseq-Basics">RNAseq-Basics</a></h3>
+        <p>Heatmap generation from GSE183947 RNA-seq data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <div class="skill-row">
+        <strong>Machine learning and AI for protein design</strong>
+        <span>PyTorch, multimodal classifiers (PLM + GNN), RFdiffusion, ProteinMPNN, AlphaFold, ESMFold, ESM-2</span>
+      </div>
+      <div class="skill-row">
+        <strong>Bioinformatics and omics</strong>
+        <span>Large-scale sequence mining, transcriptome analysis, single-cell RNA-seq (Seurat), differential expression (DESeq2), R and Python</span>
+      </div>
+      <div class="skill-row">
+        <strong>Structural modeling</strong>
+        <span>Molecular docking (ZDOCK), structure prediction, structural bioinformatics</span>
+      </div>
+      <div class="skill-row">
+        <strong>Experimental</strong>
+        <span>Yeast display, in vivo pharmacology and histology, fluorescence microscopy, ImageJ image analysis</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="honors">
+    <h2>Honors and Presentations</h2>
+    <div class="card">
+      <ul>
+        <li><strong>NIH T32 Training Grant</strong>, Computational Approaches to Diabetes Research (2024–2026)</li>
+        <li><strong>Best Flash Talk Award</strong>, Boulder Peptide Symposium (2025)</li>
+        <li><strong>Travel Award</strong>, Boulder Peptide Symposium (2025)</li>
+        <li>NeurIPS Workshops (2025): MLSB, LLM4H, AI4H</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Ph.D., Molecular Pharmaceutics</strong>, University of Utah (2021–2026), GPA 3.95</li>
+        <li><strong>Doctorate in Pharmacy (PharmD)</strong>, Tehran University of Medical Sciences (2017)</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    &copy; 2026 Reza Moosavi. See <a href="https://scholar.google.com/citations?user=WJsn2kQAAAAJ&hl=en&oi=ao">Google Scholar</a> for the full publication list.
+  </div>
+</footer>
+
+</body>
+</html>
